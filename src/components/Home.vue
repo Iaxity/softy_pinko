@@ -35,7 +35,6 @@
 
 <script>
 export default {
-  name: "RowText",
   props: {
     msg: String,
   },
