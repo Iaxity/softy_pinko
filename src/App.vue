@@ -71,6 +71,12 @@ nav {
   @media (max-width: 1250px) {
     width: 900px;
   }
+  @media (max-width: 900px) {
+    width: 700px;
+  }
+  @media (max-width: 700px) {
+    width: 500px;
+  }
   &__nav {
     padding-left: 40px;
     &:nth-child(2) {

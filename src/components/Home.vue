@@ -94,6 +94,12 @@ h6 {
       margin: auto;
     }
   }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    .home__item {
+      margin-left: 0px;
+    }
+  }
   p {
     color: rgb(75, 75, 75);
     font-size: 14px;
