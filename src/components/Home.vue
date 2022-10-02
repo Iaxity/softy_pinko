@@ -35,7 +35,6 @@
 
 <script>
 export default {
-  name: "RowText",
   props: {
     msg: String,
   },
@@ -93,6 +92,12 @@ h6 {
       width: 90px;
       line-height: 90px;
       margin: auto;
+    }
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    .home__item {
+      margin-left: 0px;
     }
   }
   p {

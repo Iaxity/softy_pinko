@@ -12,7 +12,6 @@ to grow up your business"
 import Home from "@/components/Home.vue";
 
 export default {
-  name: "HomeView",
   components: {
     Home,
   },
