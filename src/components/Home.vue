@@ -1,34 +1,36 @@
 <template>
   <div class="row">
-    <h1>{{ msg }}</h1>
-    <p>
-      Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo
-      for your company at absolutely free of charge
-    </p>
-    <a href="#"><button class="btn">Discover more</button></a>
-  </div>
-  <div class="home__gallery">
-    <div class="home__item">
-      <div class="icon">
-        <img alt="icon" src="../assets/featured-item-01.png" />
-      </div>
+    <div class="container">
+      <h1>{{ msg }}</h1>
+      <p>
+        Softy Pinko is a professional Bootstrap 4.0 theme designed by Template
+        Mo for your company at absolutely free of charge
+      </p>
+      <a href="#"><button class="btn">Discover more</button></a>
+      <div class="home__gallery">
+        <div class="home__item">
+          <div class="icon">
+            <img alt="icon" src="../assets/featured-item-01.png" />
+          </div>
 
-      <div class="item__title"><h5>Modern Strategy</h5></div>
-      <p>Customize anything in this template to fit your website needs</p>
-    </div>
-    <div class="home__item">
-      <div class="icon">
-        <img alt="icon" src="../assets/featured-item-01.png" />
+          <div class="item__title"><h5>Modern Strategy</h5></div>
+          <p>Customize anything in this template to fit your website needs</p>
+        </div>
+        <div class="home__item">
+          <div class="icon">
+            <img alt="icon" src="../assets/featured-item-01.png" />
+          </div>
+          <div class="item__title"><h5>Best Relationship</h5></div>
+          <p>Contact us immediately if you have a question in mind</p>
+        </div>
+        <div class="home__item">
+          <div class="icon">
+            <img alt="icon" src="../assets/featured-item-01.png" />
+          </div>
+          <div class="item__title"><h5>Ultimate Marketing</h5></div>
+          <p>You just need to tell your friends about our free templates</p>
+        </div>
       </div>
-      <div class="item__title"><h5>Best Relationship</h5></div>
-      <p>Contact us immediately if you have a question in mind</p>
-    </div>
-    <div class="home__item">
-      <div class="icon">
-        <img alt="icon" src="../assets/featured-item-01.png" />
-      </div>
-      <div class="item__title"><h5>Ultimate Marketing</h5></div>
-      <p>You just need to tell your friends about our free templates</p>
     </div>
   </div>
 </template>
@@ -55,7 +57,24 @@ h6 {
   font-weight: 500;
   color: white;
 }
-
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  margin: 20px;
+}
+a {
+  color: #c561a9;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .home__gallery {
   display: flex;
   justify-content: center;
@@ -67,9 +86,6 @@ h6 {
     font-family: "Raleway", sans-serif;
     margin: 15px 0 15px;
     color: black;
-  }
-  img {
-    vertical-align: middle;
   }
   .home__item {
     cursor: pointer;
@@ -93,6 +109,11 @@ h6 {
       line-height: 90px;
       margin: auto;
     }
+    &:hover {
+      .icon {
+        background: #c561a9;
+      }
+    }
   }
   @media (max-width: 900px) {
     flex-direction: column;
@@ -107,22 +128,11 @@ h6 {
     font-family: "Raleway", sans-serif;
   }
 }
-
 .row {
   font-size: 13px;
   font-weight: 500;
   color: rgb(255, 255, 255);
   white-space: break-spaces;
-  p {
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: white;
-    margin: 20px;
-  }
-  a {
-    color: #c561a9;
-  }
   .btn {
     cursor: pointer;
     border-radius: 20px;
