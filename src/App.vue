@@ -42,7 +42,6 @@ h6 {
   font-weight: 500;
   color: white;
 }
-
 a {
   font-size: 13px;
   font-weight: 500;
@@ -53,10 +52,10 @@ nav {
   background: rgb(255, 255, 255);
   border-radius: 40px;
   padding: 25px 15px;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
+  display: flex;
 }
 
 .container {
@@ -67,15 +66,64 @@ nav {
 .header {
   padding-top: 30px;
   width: 1100px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
 
-  @media (max-width: 1250px) {
+  @media (max-width: 1150px) {
     width: 900px;
+    flex-direction: column-reverse;
+    align-items: flex-end;
   }
   @media (max-width: 900px) {
-    width: 700px;
-  }
-  @media (max-width: 700px) {
-    width: 500px;
+    width: 600px;
+    /* Кнопка выпадающего списка */
+    .dropbtn {
+      background-color: #4caf50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Выпадающее содержимое (скрыто по умолчанию) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Ссылки внутри выпадающего списка */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Изменение цвета выпадающих ссылок при наведении курсора */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Показать выпадающее меню при наведении курсора */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
   }
   &__nav {
     padding-left: 40px;
